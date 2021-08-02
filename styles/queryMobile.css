@@ -1,0 +1,74 @@
+@media screen and (max-width:480px){
+
+  .fa-ellipsis-v{
+    display: block !important;
+  }
+  .nav{
+    position: absolute;
+    right: 0;
+    display: none;
+    top: 70px;
+    height: auto;
+    width: auto;
+    background-color: var(--color-footerheader-bg);
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+  }
+  .nav_container{
+    display: inline-block;
+    height: auto;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_item{
+    margin: 15px 0;
+  }
+
+  .item{
+    text-align: end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main_content{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .main_content p{
+    color: var(--color-text);
+    margin: 0;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--color-footerheader-bg);
+  }
+  
+  .main_title{
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--color-footerheader-bg);
+  }
+
+  /* buttons */
+  .main_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*My Work*/
+  .my_work_item{
+    width: 90%;
+  }
+
+  /*Contact*/
+  .contact_form{
+    width: 80%;
+  }
+}
