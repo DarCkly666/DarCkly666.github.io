@@ -23,11 +23,16 @@
     <nav class="nav" id="nav">
       <ul class="nav_container" id="nav_container">
         <li class="nav_item"><a class="item active" href="/">Home</a></li>
+        <li class="nav_item"><a class="item" href="#about">About</a></li>
         <li class="nav_item"><a class="item" href="#my_work">My Work</a></li>
         <li class="nav_item"><a class="item" href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <i class="fas fa-ellipsis-v" id="header_menu"></i>
+    <div class="menu_icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
   <main class="main">
     <section id="home" class="section home">
@@ -40,17 +45,32 @@
         </div>
       </div>
     </section>
+
+    <section id="about" class="section about">
+      <div class="about_container">
+        <h2 class="about_subtitle subtitle">About me</h2>
+        <div class="about_content">
+          <img class="about_image" src="https://pbs.twimg.com/media/ENLf_vvXsAA59G7?format=jpg&name=large" alt="darckdev image" />
+          <div class="about_content_text">
+            <h2 class="about_content_title">DarCkDev</h2>
+            <p class="about_content_content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+              repellat? Quibusdam, magni! Ipsa voluptatibus sint consectetur
+              tempore harum! Saepe voluptates illum, provident dolore rem
+              laborum voluptate modi ipsa non. Sunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
     <section id="my_work" class="section my_work">
       <h2 class="my_work_title subtitle">My Work</h2>
       <div class="my_work_container">
-        <div class="my_work_item"></div>
-        <div class="my_work_item"></div>
-        <div class="my_work_item"></div>
-        <div class="my_work_item"></div>
-        <div class="my_work_item"></div>
-        <div class="my_work_item"></div>
       </div>
     </section>
+    <div class="separator"></div>
     <section id="contact" class="section contact">
       <h2 class="contact_title subtitle">Contact</h2>
       <div class="contact_form_container">
@@ -73,7 +93,8 @@
   <div class="go_top" id="go_top">
     <i class="fas fa-chevron-up"></i>
   </div>
-  <script src="index.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/my_works.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,700&display=swap');
-
+@import url("./menu_icon.css");
 :root{
-  --color-dark: #2C2E43;
+  --color-dark: #001219;
   --color-primary: #595260;
   --color-secondary: #B2B1B9;
   --color-text: #e4e3e7;
@@ -33,6 +33,7 @@ body{
   align-items: center;
   box-sizing: border-box;
   z-index: 10;
+  transition: background-color 0.2s ease-in;
 }
 
 .nav_logo_container{
@@ -69,11 +70,13 @@ body{
   margin-top: 15px;
   transition: all 0.2s ease-in-out;
 }
-.fa-ellipsis-v{
-  color: var(--color-text);
-  display: none !important;
-}
 
+.separator{
+  width: 100%;
+  height: 3px;
+  opacity: 0.5;
+  background-color: var(--color-input-placeholder);
+}
 /*Home*/
 
 .section{
@@ -120,6 +123,43 @@ body{
   color: var(--color-text);
   font-weight: bold;
 }
+
+.about{
+  padding-top: 50px;
+}
+.about_subtitle{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.about_content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.about_image{
+  width: 350px;
+}
+
+.about_content_text{
+  width: 600px;
+}
+
+.about_content_title{
+  color: var(--color-text);
+  font-size: 3rem;
+}
+.about_content_content{
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
 
 .bMyWork{
   background-color: var(--color-button-bg);
@@ -170,13 +210,54 @@ body{
 .my_work_item{
   width: 45%;
   height: 400px;
-  background-color: var(--color-button-bg);
+  background-size: cover;
+  background-position: center;
   margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.my_work_item:hover{
-  transform: scale(1.1);
+.work_title_container{
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(360deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.work_title{
+  max-width: 70%;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+.btn_view{
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid white;
+  transition: all 0.3s ease-in;
+}
+.btn_view a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.btn_view:hover{
+  background-color: black;
+  border: 2px solid black;
 }
 
 /*Contact*/
@@ -238,7 +319,8 @@ body{
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  display: none;
+  opacity: 0;
+  transition: opacity ease-in 0.5s;
 }
 .go_top i{
   color: var(--color-text);
