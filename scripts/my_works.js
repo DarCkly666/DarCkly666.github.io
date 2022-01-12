@@ -24,6 +24,9 @@ const createItemWork = (item) => {
       <button class="btn_view">
         <a href="${item.url}" target="_blank">View</a>
       </button>
+      <button class="btn_view gh">
+        <a href="${item.url_github}" target="_blank">View GitHub Repo</a>
+      </button>
     </div>
   `;
   return contWork;

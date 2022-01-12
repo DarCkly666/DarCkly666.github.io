@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,700&display=swap');
 @import url("./menu_icon.css");
 @import url("./navbar.css");
+@import url("./works.css");
 :root{
   --color-dark: #001219;
   --color-primary: #595260;
@@ -22,6 +23,7 @@ body{
   box-sizing: border-box;
   background-color: var(--color-dark);
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 /* .header{
@@ -98,6 +100,14 @@ body{
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
+  animation-name: slide-left;
+  animation-duration: 1s;
+}
+
+@keyframes slide-left{
+  from{
+    margin-left: -100%;
+  }
 }
 
 .main_content p{
@@ -189,7 +199,7 @@ body{
 
 
 /*My work*/
-.my_work{
+/*.my_work{
   padding-top: 60px;
   width: 100%;
 }
@@ -259,7 +269,7 @@ body{
 .btn_view:hover{
   background-color: black;
   border: 2px solid black;
-}
+}*/
 
 /*Contact*/
 

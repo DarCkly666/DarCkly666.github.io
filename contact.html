@@ -44,6 +44,7 @@
             class="form-control"
             id="formName"
             placeholder="Name"
+            required
           />
           <label for="formName">Name</label>
         </div>
@@ -53,6 +54,7 @@
             class="form-control"
             id="formMail"
             placeholder="name@example.com"
+            required
           />
           <label for="formMail">Email address</label>
         </div>
@@ -62,6 +64,7 @@
             placeholder="Leave a message here"
             id="formMessage"
             style="height: 100px"
+            required
           ></textarea>
           <label for="formMessage">Message</label>
         </div>
@@ -71,15 +74,13 @@
     </main>
 
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">DarCkDev</strong>
-          <small>Just now</small>
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2500">
+        <div class="toast-header bg-success">
+          <strong class="me-auto text-white">DarCkDev</strong>
+          <small class="text-white">Just now</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-        <div class="toast-body">
-          Gracias por enviar su mensaje, en breve le respondemos.
-        </div>
+        <div class="toast-body">My custom message</div>
       </div>
     </div>
 
