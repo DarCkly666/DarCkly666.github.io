@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/queryMobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/queryMobile.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>DarCkDev</title>
-</head>
+    <title>DarCkDev</title>
+  </head>
 
-<body>
-  <header class="header" id="header">
-    <a class="nav_logo_container" href="#home"><img class="nav_logo" src="./assets/c.png" alt="logo"></a>
-    <nav class="nav" id="nav">
-      <ul class="nav_container" id="nav_container">
-        <li class="nav_item"><a class="item active" href="/">Home</a></li>
-        <li class="nav_item"><a class="item" href="#about">About</a></li>
-        <li class="nav_item"><a class="item" href="#my_work">My Work</a></li>
-        <li class="nav_item"><a class="item" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="menu_icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </header>
-  <main class="main">
-    <section id="home" class="section home">
-      <div class="main_content">
-        <h1 class="main_title">DarCkDev</h1>
-        <p>Frontend & mobile developer</p>
-        <div class="main_buttons">
-          <a href="#my_work"><button class="button bMyWork">My Works</button></a>
-          <a href="#contact"><button class="button bGetTouch">Get in touch</button></a>
-        </div>
+  <body>
+    <header class="header" id="header">
+      <a class="nav_logo_container" href="/"
+        ><img class="nav_logo" src="./assets/c.png" alt="logo"
+      /></a>
+      <nav class="nav" id="nav">
+        <ul class="nav_container" id="nav_container">
+          <li class="nav_item"><a class="item active" href="/">Home</a></li>
+          <li class="nav_item"><a class="item" href="#about">About</a></li>
+          <li class="nav_item"><a class="item" href="#my_work">My Work</a></li>
+          <li class="nav_item">
+            <a class="item" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu_icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="about_container">
-        <h2 class="about_subtitle subtitle">About me</h2>
-        <div class="about_content">
-          <img class="about_image" src="https://pbs.twimg.com/media/ENLf_vvXsAA59G7?format=jpg&name=large" alt="darckdev image" />
-          <div class="about_content_text">
-            <h2 class="about_content_title">DarCkDev</h2>
-            <p class="about_content_content">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
-              repellat? Quibusdam, magni! Ipsa voluptatibus sint consectetur
-              tempore harum! Saepe voluptates illum, provident dolore rem
-              laborum voluptate modi ipsa non. Sunt.
-            </p>
+    </header>
+    <main class="main">
+      <section id="home" class="section home">
+        <div class="main_content">
+          <h1 class="main_title">DarCkDev</h1>
+          <p>Frontend & mobile developer</p>
+          <div class="main_buttons">
+            <a href="#my_work"
+              ><button class="button bMyWork">My Works</button></a
+            >
+            <a href="#contact"
+              ><button class="button bGetTouch">Get in touch</button></a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="separator"></div>
-    <section id="my_work" class="section my_work">
-      <h2 class="my_work_title subtitle">My Work</h2>
-      <div class="my_work_container">
+      <section id="about" class="section about">
+        <div class="about_container">
+          <h2 class="about_subtitle subtitle">About me</h2>
+          <div class="about_content">
+            <img
+              class="about_image"
+              src="https://pbs.twimg.com/media/ENLf_vvXsAA59G7?format=jpg&name=large"
+              alt="darckdev image"
+            />
+            <div class="about_content_text">
+              <h2 class="about_content_title">DarCkDev</h2>
+              <p class="about_content_content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                repellat? Quibusdam, magni! Ipsa voluptatibus sint consectetur
+                tempore harum! Saepe voluptates illum, provident dolore rem
+                laborum voluptate modi ipsa non. Sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator"></div>
+      <section id="my_work" class="section my_work">
+        <h2 class="my_work_title subtitle">My Work</h2>
+        <div class="my_work_container"></div>
+      </section>
+      <div class="separator"></div>
+      <!-- <section id="contact" class="section contact">
+        <h2 class="contact_title subtitle">Contact</h2>
+        <div class="contact_form_container">
+          <form class="contact_form">
+            <input
+              type="text"
+              name="name"
+              id="contact_name"
+              class="contact_input"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="contact_email"
+              class="contact_input"
+              placeholder="email"
+            />
+            <input
+              type="text"
+              name="message"
+              id="contact_message"
+              class="contact_input"
+              placeholder="Message"
+            />
+            <input type="submit" value="Send" class="contact_submit" />
+          </form>
+        </div>
+      </section> -->
+      <section id="about" class="section about"></section>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <p class="footer_title">®DarCkDev</p>
       </div>
-    </section>
-    <div class="separator"></div>
-    <section id="contact" class="section contact">
-      <h2 class="contact_title subtitle">Contact</h2>
-      <div class="contact_form_container">
-        <form class="contact_form">
-          <input type="text" name="name" id="contact_name" class="contact_input" placeholder="Name">
-          <input type="email" name="email" id="contact_email" class="contact_input" placeholder="email">
-          <input type="text" name="message" id="contact_message" class="contact_input" placeholder="Message">
-          <input type="submit" value="Send" class="contact_submit">
-        </form>
-      </div>
-    </section>
-    <section id="about" class="section about"></section>
-  </main>
-  <footer class="footer">
-    <div class="footer_container">
-      <p class="footer_title">®DarCkDev</p>
+    </footer>
+
+    <div class="go_top" id="go_top">
+      <i class="fas fa-chevron-up"></i>
     </div>
-  </footer>
-
-  <div class="go_top" id="go_top">
-    <i class="fas fa-chevron-up"></i>
-  </div>
-  <script src="./scripts/index.js"></script>
-  <script src="./scripts/my_works.js"></script>
-</body>
-
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/my_works.js"></script>
+  </body>
 </html>
