@@ -6,9 +6,7 @@ const worksContainer = document.querySelector(".my_work_container");
 fetch("../assets/my_work.json")
 .then(data => data.json())
 .then(response => {
-  console.log(response);
   response.forEach(work => {
-    console.log(work.title);
     worksContainer.appendChild(createItemWork(work));
   });
 })
@@ -31,3 +29,8 @@ const createItemWork = (item) => {
   `;
   return contWork;
 }
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
