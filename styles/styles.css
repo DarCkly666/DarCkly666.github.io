@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,700&display=swap');
-
-:root{
-  --color-dark: #2C2E43;
-  --color-primary: #595260;
-  --color-secondary: #B2B1B9;
-  --color-text: #e4e3e7;
-  --color-accent: #FFD523;
-
-  --color-button-bg: #d62828;
-  --color-input-placeholder: #690000;
-
-  --color-footerheader-bg: #0F1418;
-}
+@import url("./menu_icon.css");
+@import url("./navbar.css");
+@import url("./works.css");
+@import url("./colors.css");
 
 html{
   scroll-behavior: smooth;
@@ -21,59 +12,15 @@ body{
   box-sizing: border-box;
   background-color: var(--color-dark);
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
-.header{
+.separator{
   width: 100%;
-  height: 70px;
-  padding: 10px 15px;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  z-index: 10;
+  height: 3px;
+  opacity: 0.1;
+  background-color: var(--color-button-bg);
 }
-
-.nav_logo_container{
-  height: 85%;
-  margin: 0;
-  padding: 0;
-}
-.nav_logo{
-  height: 100%;
-}
-
-.nav{
-  height: 100%;
-}
-
-.nav_container{
-  display: flex;
-  height: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav_item{
-  width: 80px;
-}
-.item{
-  text-decoration: none;
-  color: var(--color-secondary);
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 15px;
-  transition: all 0.2s ease-in-out;
-}
-.fa-ellipsis-v{
-  color: var(--color-text);
-  display: none !important;
-}
-
 /*Home*/
 
 .section{
@@ -94,6 +41,14 @@ body{
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
+  animation-name: slide-left;
+  animation-duration: 1s;
+}
+
+@keyframes slide-left{
+  from{
+    margin-left: -100%;
+  }
 }
 
 .main_content p{
@@ -121,6 +76,43 @@ body{
   font-weight: bold;
 }
 
+.about{
+  padding-top: 50px;
+}
+.about_subtitle{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.about_content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.about_image{
+  width: 350px;
+}
+
+.about_content_text{
+  width: 600px;
+}
+
+.about_content_title{
+  color: var(--color-text);
+  font-size: 3rem;
+}
+.about_content_content{
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+
 .bMyWork{
   background-color: var(--color-button-bg);
   border: none;
@@ -144,39 +136,6 @@ body{
 
 .bGetTouch:hover{
   border: 1px solid var(--color-button-bg);
-}
-
-
-/*My work*/
-.my_work{
-  padding-top: 60px;
-  width: 100%;
-}
-
-.subtitle{
-  color: var(--color-text);
-  text-align: center;
-}
-
-.my_work_container{
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.my_work_item{
-  width: 45%;
-  height: 400px;
-  background-color: var(--color-button-bg);
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.my_work_item:hover{
-  transform: scale(1.1);
 }
 
 /*Contact*/
@@ -208,7 +167,6 @@ body{
   color: var(--color-text);
   border-radius: 5px;
   padding: 0 10px;
-  /* box-shadow: 1px 1px 15px var(--color-button-bg); */
 }
 
 .contact_submit{
@@ -229,7 +187,7 @@ body{
 
 /*Go top*/
 .go_top{
-  background-color: #ff00003f;
+  background-color: var(--color-go-top);
   width: 50px;
   height: 50px;
   position: fixed;
@@ -238,7 +196,8 @@ body{
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  display: none;
+  opacity: 0;
+  transition: opacity ease-in 0.5s;
 }
 .go_top i{
   color: var(--color-text);
@@ -250,10 +209,13 @@ body{
 /*Footer*/
 .footer_container{
   width: 100%;
-  height: 100px;
+  padding: 10px 0;
   box-sizing: border-box;
   background-color: var(--color-footerheader-bg);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer_title{
@@ -261,10 +223,19 @@ body{
   font-weight: bold;
   color: var(--color-text);
   text-align: center;
-  display: inline-block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
+  margin: 0;
+}
+
+.footer_social{
+  margin: 20px;
+}
+
+.fa-github{
+  font-size: 24px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.fa-github:hover{
+  color: var(--color-button-bg);
 }
