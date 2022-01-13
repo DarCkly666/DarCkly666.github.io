@@ -1,0 +1,81 @@
+body{
+  --color-icon: #212529;
+  --color-html: #E54C21;
+  --color-css: #0070BA;
+  --color-js: #F7E018;
+  --color-react: #61DBFB;
+  --color-node: #539D46;
+  --color-bootstrap: #890AFC;
+  --color-git: #F05133;
+  --color-github: #1C1F24;
+  --color-android: #32DE84;
+}
+.technologies_title{
+  margin: 50px 0;
+}
+
+.technologies_container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.tech_item{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.tech_image{
+  font-size: 50px;
+  color: var(--color-icon);
+}
+
+.progress{
+  width: 100%;
+}
+.progress-bar{
+  background-color: var(--color-button-bg) !important;
+}
+
+.tech_item:hover .fa-html5{
+  color: var(--color-html);
+}
+
+.tech_item:hover .fa-css3-alt{
+  color: var(--color-css);
+}
+
+.tech_item:hover .fa-js{
+  color: var(--color-js);
+}
+
+.tech_item:hover .fa-react{
+  color: var(--color-react);
+}
+
+.tech_item:hover .fa-node-js{
+  color: var(--color-node);
+}
+
+.tech_item:hover .fa-bootstrap{
+  color: var(--color-bootstrap);
+}
+
+.tech_item:hover .fa-git-alt{
+  color: var(--color-git);
+}
+
+.tech_item:hover .fa-github{
+  color: var(--color-github);
+}
+
+.tech_item:hover .fa-android{
+  color: var(--color-android);
+}

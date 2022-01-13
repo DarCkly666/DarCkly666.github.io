@@ -10,7 +10,7 @@ html{
 body{
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--color-dark);
+  background-color: var(--color-dark) !important;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
@@ -105,11 +105,13 @@ body{
 
 .about_content_title{
   color: var(--color-text);
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
 }
 .about_content_content{
   color: var(--color-text);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 
@@ -227,7 +229,7 @@ body{
 }
 
 .footer_social{
-  margin: 20px;
+  margin: 5px;
 }
 
 .fa-github{
