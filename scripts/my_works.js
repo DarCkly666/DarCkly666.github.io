@@ -16,7 +16,8 @@ const createItemWork = (item) => {
   const contWork = document.createElement("div");
   contWork.className = "my_work_item";
   contWork.style.backgroundImage = `url("${item.image}")`;
-  contWork.innerHTML = `
+  if (!item.construction){
+    contWork.innerHTML = `
     <div class="work_title_container">
       <p class="work_title">${item.title}</p>
       <button class="btn_view">
@@ -27,6 +28,14 @@ const createItemWork = (item) => {
       </button>
     </div>
   `;
+  }else{
+    contWork.innerHTML = `
+      <div class="work_title_container">
+        <p class="work_title">${item.title}</p>
+        <p class="under_construction">Under construction</p>
+      </div>
+    `;
+  }
   return contWork;
 }
 
