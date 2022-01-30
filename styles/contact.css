@@ -11,41 +11,17 @@
   --color-footerheader-bg: #0F1418;
 } */
  @import url("./colors.css");
-body{
-  margin: 0;
-  background-color: var(--color-dark);
-}
 
-.nav{
+.contact{
   width: 100%;
-  height: 45px;
-  box-sizing: border-box;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-dark);
-}
-
-.navbar-logo img{
-  height: 40px;
-}
-
-.nav p{
-  margin: 0;
-  color: var(--color-button-bg);
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.main{
-  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 80px;
 }
 
-h2{
+.contact_subtitle{
   font-weight: 24px;
   text-align: center;
   margin: 40px 50px;
