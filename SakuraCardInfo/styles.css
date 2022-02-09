@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url("./loading.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  --color-text: #ffffff;
+  --color-text-bg: rgba(0,0,0,0.4);
+  --color-gradient-top: rgba(0,0,0,0);
+  --color-gradient-bottom: #000000;
+  --color-card-number: #e00000;
+  --color-main-bg: #191828;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+}
+html{
+  scroll-behavior: smooth;
+  background-color: var(--color-main-bg);
+}
+
+.cards_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  margin: 0;
+  background-color: var(--color-main-bg);
+}
+
+.card_item{
+  width: 250px;
+  height: 400px;
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card_number{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-card-number);
+  color: var(--color-text);
+  text-align: center;
+  line-height: 30px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px black;
+  z-index: 100;
+}
+
+.card_image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card_title{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  line-height: 70px;
+  background: linear-gradient(360deg, var(--color-gradient-bottom), var(--color-gradient-top));
+  text-align: center;
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: line-height 0.3s ease-in;
+}
+
+.card_item:hover .card_title{
+  background-color: var(--color-text-bg);
+  line-height: 400px;
+}
+
+.ic_search{
+  color: var(--color-text);
+}
