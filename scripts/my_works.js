@@ -12,10 +12,17 @@ fetch("../assets/my_work.json")
 })
 .catch(error => {console.error(error)});
 
+const gitrepoButton = (url_github) => `<button class="btn_view gh">
+<a href="${url_github}" target="_blank">View GitHub Repo</a>
+</button>`;
+
 const createItemWork = (item) => {
   const contWork = document.createElement("div");
   contWork.className = "my_work_item";
   contWork.style.backgroundImage = `url("${item.image}")`;
+  const gitButton = (url_github) => {
+    return url_github.length !== 0 ? gitrepoButton(url_github) : "";
+  }
   if (!item.construction){
     contWork.innerHTML = `
     <div class="work_title_container">
@@ -23,9 +30,7 @@ const createItemWork = (item) => {
       <button class="btn_view">
         <a href="${item.url}" target="_blank">View</a>
       </button>
-      <button class="btn_view gh">
-        <a href="${item.url_github}" target="_blank">View GitHub Repo</a>
-      </button>
+      ${gitButton(item.url_github)}
     </div>
   `;
   }else{

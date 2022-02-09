@@ -124,6 +124,17 @@ body{
   background-color: var(--color-dark);
   border: 1px solid var(--color-secondary);
 }
+.nav_item_download{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.bdownload{
+  width: 150px;
+  margin: 0;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-secondary);
+}
 
 
 .item:hover{
@@ -136,7 +147,7 @@ body{
   border: 1px solid var(--color-button-bg);
 }
 
-.bGetTouch:hover{
+.bGetTouch:hover, .bdownload:hover{
   border: 1px solid var(--color-button-bg);
 }
 

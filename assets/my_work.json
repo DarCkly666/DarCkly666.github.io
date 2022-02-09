@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Sunny Side",
     "url": "https://www.chromoai.tech/sunnyside",
-    "url_github": "https://github.com/DarCkly666/bVdaYwq",
+    "url_github": "",
     "image": "https://elements-cover-images-0.imgix.net/b0ddb8bb-7e2b-4a75-8128-28f5917ea45e?auto=compress%2Cformat&fit=max&w=900&s=2c2c364ac486a1723a888cb7af3cd011",
     "construction": false
   },
@@ -22,5 +22,13 @@
     "url_github": "https://github.com/DarCkly666/bVdaYwq",
     "image": "https://elements-cover-images-0.imgix.net/b0ddb8bb-7e2b-4a75-8128-28f5917ea45e?auto=compress%2Cformat&fit=max&w=900&s=2c2c364ac486a1723a888cb7af3cd011",
     "construction": true
+  },
+  {
+    "id": 4,
+    "title": "Sakura Cards Info",
+    "url": "https://darckly666.github.io/sakuracardinfo",
+    "url_github": "https://github.com/DarCkly666/bVdaYwq",
+    "image": "https://www.latercera.com/resizer/WyDSTJbBDSwhlLK4gGqLOMGMBlc=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/A4VGJC4W4VF45CQ375L2OMLYNQ.jpg",
+    "construction": false
   }
 ]
