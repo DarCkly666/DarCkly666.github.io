@@ -28,7 +28,7 @@ function getData(url) {
 const cardElement = (card) => {
   return `
     <li class="card_item" >
-      <a href="/cardDetail.html?id=${card._id}" target="_blank">
+      <a href="./cardDetail.html?id=${card._id}" target="_blank">
         <div>
           <p class="card_number">${card.cardNumber}</p>
           <img class="card_image" src="${card.sakuraCard}" alt="${card.englishName}" />
