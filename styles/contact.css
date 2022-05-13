@@ -29,30 +29,42 @@
   font-weight: bold;
   color: var(--color-text);
 }
-.input_form{
-  width: 650px;
-  margin: 30px 0;
+
+.contact_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.form_submit{
-  width: 150px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
+.contact_container p{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
 
+.contact_item{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  height: 40px;
+}
+
+.contact_item i{
+  font-size: 20px;
+}
+
+.contact_item p{
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.contact_item:hover i{
+  color: var(--color-button-bg);
+}
 
 @media screen and (max-width: 400px){
-  h2{
-    line-height: 25px;
-    margin: 20px 30px;
-  }
-  .form{
-    width: 90%;
-  }
-  .input_form{
-    width: 100%;
-  }
+  
 
 }

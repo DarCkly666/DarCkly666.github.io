@@ -37,7 +37,9 @@
       <nav class="nav" id="nav">
         <ul class="nav_container" id="nav_container">
           <li class="nav_item_download">
-            <button class="button bdownload">Download CV</button>
+            <a href="./assets/CV.pdf" download="">
+              <button class="button bdownload">Download CV</button>
+            </a>
           </li>
           <li class="nav_item"><a class="item active" href="/">Home</a></li>
           <li class="nav_item"><a class="item" href="#about">About</a></li>
@@ -56,8 +58,8 @@
     <main class="main">
       <section id="home" class="section home">
         <div class="main_content">
-          <h1 class="main_title">DarCkDev</h1>
-          <p>Frontend & mobile developer</p>
+          <h1 class="main_title">Charly Rodríguez</h1>
+          <p>Backend Developer</p>
           <div class="main_buttons">
             <a href="#my_work"
               ><button class="button bMyWork">My Works</button></a
@@ -75,16 +77,15 @@
           <div class="about_content">
             <img
               class="about_image"
-              src="https://gcdn.lanetaneta.com/wp-content/uploads/2021/10/El-informe-de-Assassins-Creed-filtra-el-proximo-juego-despues.jpg"
+              src="./assets/image.jpg"
               alt="darckdev image"
             />
             <div class="about_content_text">
-              <h2 class="about_content_title">DarCkDev</h2>
+              <h2 class="about_content_title">Charly Rodríguez</h2>
               <p class="about_content_content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
-                repellat? Quibusdam, magni! Ipsa voluptatibus sint consectetur
-                tempore harum! Saepe voluptates illum, provident dolore rem
-                laborum voluptate modi ipsa non. Sunt.
+                I am currently a student of Computer Engineer, selftaught and
+                passionate about technology, mainly web development and
+                Artificial Intelligence.
               </p>
             </div>
           </div>
@@ -173,8 +174,8 @@
               <div
                 class="progress-bar"
                 role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
+                style="width: 20%"
+                aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -193,8 +194,8 @@
               <div
                 class="progress-bar"
                 role="progressbar"
-                style="width: 75%"
-                aria-valuenow="75"
+                style="width: 35%"
+                aria-valuenow="35"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -213,8 +214,8 @@
               <div
                 class="progress-bar"
                 role="progressbar"
-                style="width: 25%"
-                aria-valuenow="25"
+                style="width: 75%"
+                aria-valuenow="75"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -261,89 +262,38 @@
             </div>
             <p class="skill_title">Github</p>
           </div>
-
-          <div
-            class="tech_item"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Android"
-          >
-            <i class="fa-brands fa-android tech_image"></i>
-            <div class="progress" style="height: 10px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 65%"
-                aria-valuenow="65"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p class="skill_title">Android</p>
-          </div>
         </div>
-      </section>
-
-      <div class="separator"></div>
-
-      <!-- <section id="about" class="section about"></section> -->
-
-      <section id="contact" class="section contact">
-        <h2 class="contact_title subtitle">Contact</h2>
-        <h2 class="contact_subtitle">
-          Thanks for taking the time to reach out. How can I help you today?
-        </h2>
-        <form action="" class="form">
-          <div class="form-floating input_form">
-            <input
-              type="text"
-              class="form-control"
-              id="formName"
-              placeholder="Name"
-              required
-            />
-            <label for="formName">Name</label>
-          </div>
-          <div class="form-floating mb-3 input_form">
-            <input
-              type="email"
-              class="form-control"
-              id="formMail"
-              placeholder="name@example.com"
-              required
-            />
-            <label for="formMail">Email address</label>
-          </div>
-          <div class="form-floating input_form">
-            <textarea
-              class="form-control"
-              placeholder="Leave a message here"
-              id="formMessage"
-              style="height: 100px"
-              required
-            ></textarea>
-            <label for="formMessage">Message</label>
-          </div>
-
-          <input
-            type="submit"
-            class="btn btn-outline-danger form_submit"
-            id="submit_form"
-            value="Send"
-          />
-        </form>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer_container">
-        <p class="footer_title">®DarCkDev</p>
-        <p class="footer_subtitle">Powered by Chromoai tech</p>
+        <p class="footer_title">DarCkly666</p>
+        <p class="footer_subtitle"></p>
         <div class="footer_social">
           <a href="https://github.com/DarCkly666/" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
+      </div>
+      <div class="contact_container">
+        <p>Contact</p>
+        <a
+          href="https://www.linkedin.com/in/charly-rodr%C3%ADguez-033728201/"
+          class="contact_item"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <p>Linkedin</p>
+        </a>
+        <a
+          href="mailto:darckly6@gmail.com"
+          class="contact_item"
+          target="_blank"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <p>Email</p>
+        </a>
       </div>
     </footer>
 
@@ -380,10 +330,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./scripts/contact.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/my_works.js"></script>
-
-    
   </body>
 </html>
