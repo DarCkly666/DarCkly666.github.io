@@ -5,25 +5,29 @@ let menuIsShowing = false;
 
 const openCloseMenu = () => {
   menu.classList.toggle("menu_active");
-  if(menuIsShowing){
-    nav.style.top = "-200px"
+  if (menuIsShowing) {
+    nav.style.top = "-300px";
     menuIsShowing = false;
-  }else{
+  } else {
     nav.style.top = "69px";
     menuIsShowing = true;
   }
-}
-menu.addEventListener("click", () => {openCloseMenu()});
+};
+menu.addEventListener("click", () => {
+  openCloseMenu();
+});
 
 const goTop = document.getElementById("go_top");
 const header = document.getElementById("header");
 
-window.onscroll = () => { scrollFunction() }
+window.onscroll = () => {
+  scrollFunction();
+};
 function scrollFunction() {
-  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     goTop.style.opacity = "1";
     header.style.backgroundColor = "#0F1418";
-  }else{
+  } else {
     goTop.style.opacity = "0";
     header.style.backgroundColor = "transparent";
   }

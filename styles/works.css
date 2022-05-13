@@ -91,3 +91,11 @@
   background-color: var(--color-dark);
   border: 2px solid var(--color-dark);
 }
+
+.under_construction{
+  background-color: var(--color-button-bg);
+  padding: 10px;
+  color: var(--color-text);
+  border-radius: 5px;
+  border: 1px solid var(--color-text);
+}

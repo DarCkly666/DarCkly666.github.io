@@ -10,6 +10,9 @@ body{
   --color-github: #1C1F24;
   --color-android: #32DE84;
 }
+.technologies{
+  margin-bottom: 50px;
+}
 .technologies_title{
   margin: 50px 0;
 }
@@ -78,4 +81,56 @@ body{
 
 .tech_item:hover .fa-android{
   color: var(--color-android);
+}
+
+.skill_title{
+  display: none;
+  padding: 5px 0;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px){
+  .skill_title{
+    display: block;
+    padding: 5px 0;
+    color: var(--color-text);
+    font-weight: bold;
+  }
+
+  .fa-html5{
+    color: var(--color-html);
+  }
+  
+  .fa-css3-alt{
+    color: var(--color-css);
+  }
+  
+  .fa-js{
+    color: var(--color-js);
+  }
+  
+  .fa-react{
+    color: var(--color-react);
+  }
+  
+  .fa-node-js{
+    color: var(--color-node);
+  }
+  
+   .fa-bootstrap{
+    color: var(--color-bootstrap);
+  }
+  
+  .fa-git-alt{
+    color: var(--color-git);
+  }
+  
+  .fa-github{
+    color: var(--color-github);
+  }
+  
+  .fa-android{
+    color: var(--color-android);
+  }
 }
