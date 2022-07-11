@@ -27,6 +27,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     // goTop.style.opacity = "1";
     header.style.backdropFilter = "blur(20px)";
+    header.style["-webkit-backdrop-filter"] = "blur(20px)";
     //   backdrop-filter: blur(5px);
     // -webkit-backdrop-filter: blur(5px);
   } else {

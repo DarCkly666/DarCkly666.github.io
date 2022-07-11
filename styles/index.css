@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
