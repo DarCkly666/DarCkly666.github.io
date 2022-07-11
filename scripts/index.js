@@ -13,27 +13,29 @@ const openCloseMenu = () => {
     menuIsShowing = true;
   }
 };
-menu.addEventListener("click", () => {
-  openCloseMenu();
-});
+// menu.addEventListener("click", () => {
+//   openCloseMenu();
+// });
 
 const goTop = document.getElementById("go_top");
-const header = document.getElementById("header");
+const header = document.querySelector(".header");
 
 window.onscroll = () => {
   scrollFunction();
 };
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    goTop.style.opacity = "1";
-    header.style.backgroundColor = "#0F1418";
+    // goTop.style.opacity = "1";
+    header.style.backdropFilter = "blur(20px)";
+    //   backdrop-filter: blur(5px);
+    // -webkit-backdrop-filter: blur(5px);
   } else {
-    goTop.style.opacity = "0";
+    // goTop.style.opacity = "0";
     header.style.backgroundColor = "transparent";
   }
 }
 
-goTop.addEventListener("click", () => {
-  document.body.scrollTop = 0; //For safari
-  document.documentElement.scrollTop = 0; //for chrome and others
-});
+// goTop.addEventListener("click", () => {
+//   document.body.scrollTop = 0; //For safari
+//   document.documentElement.scrollTop = 0; //for chrome and others
+// });

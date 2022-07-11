@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-primary: #aa0eb2;
+  --color-secondary: #08b5f9;
+  --color-background: #0e1129;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-background);
+  overflow-x: hidden;
+}
