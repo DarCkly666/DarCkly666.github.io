@@ -14,6 +14,15 @@ html {
   --color-primary: #aa0eb2;
   --color-secondary: #08b5f9;
   --color-background: #0e1129;
+
+  --color-git: #3f2e00;
+  --color-html: #d84924;
+  --color-css: #2449d8;
+  --color-javascript: #ead41c;
+  --color-react: #00cdf2;
+  --color-node: #5e9459;
+  --color-express: #89bb3c;
+  --color-mysql: #005c85;
 }
 
 body {

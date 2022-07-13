@@ -50,111 +50,223 @@ main {
   color: var(--color-secondary);
 }
 
-@-moz-keyframes rotate { 
-  100% { -moz-transform: rotate(360deg); } 
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-@-webkit-keyframes rotate { 
-  100% { -webkit-transform: rotate(360deg); } 
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
-@keyframes rotate { 
-  100% { 
-      -webkit-transform: rotate(360deg); 
-      transform:rotate(360deg); 
-  } 
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*Section Skills*/
 
-.section_skills{
+.section_skills {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
+  position: relative;
 }
 
-.skills_container{
+.section_skills h2,
+.section_my_work h2 {
+  font-size: 45px;
+  color: var(--color-primary);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+}
+
+.skills_container {
   width: auto;
   height: auto;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
   border-radius: 10px;
-  background-color: #aa0eb259;
+  background-color: #ffffff10;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  /* animation: rotateSkills linear infinite 15s; */
+  box-sizing: border-box;
 }
 
-/* .skills_container i{
-  position: absolute;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 40px;
+.git,
+.html,
+.css,
+.javas,
+.react,
+.node,
+.express,
+.mysql {
+  font-size: 35px;
   color: var(--color-secondary);
-  animation: rotateSkill linear infinite 15s;
+  text-align: center;
+  width: 100%;
 }
 
-.git{
-  top: 0;
-  left: 0;
+.skill_container p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
-.html{
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+.skill_container {
+  border: 1px solid transparent;
+  padding: 7px;
 }
-.css{
-  top: 0;
-  right: 0;
-}
-.javas{
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-}
-.react{
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-.node{
-  bottom: 0;
-  left: 0;
-}
-.express{
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-}
-.mysql{
-  right: 0;
-  bottom: 0;
-} */
-
-@keyframes rotateSkills {
-  to{
-    transform: rotate(360deg);
-  }
+.skill_container:hover {
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 25px var(--color-primary);
 }
 
-@keyframes rotateSkill {
-  to{
-    transform: rotate(-360deg);
-  }
+.skill_container:hover .git {
+  color: white;
 }
+
+.skill_container:hover .html {
+  color: var(--color-html);
+}
+
+.skill_container:hover .css {
+  color: var(--color-css);
+}
+
+.skill_container:hover .javas {
+  color: var(--color-javascript);
+}
+
+.skill_container:hover .react {
+  color: var(--color-react);
+}
+
+.skill_container:hover .node {
+  color: var(--color-node);
+}
+
+.skill_container:hover .express {
+  color: var(--color-express);
+}
+
+.skill_container:hover .mysql {
+  color: var(--color-mysql);
+}
+
 /*Section My Work*/
+
+.section_my_work {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.my_work_item {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffffff10;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in;
+  background-position: center;
+  overflow: hidden;
+}
+
+.work_title_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, #000000, #ffffff00);
+}
+
+.buttons_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.work_title {
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn_view {
+  width: 100px;
+  height: 30px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.btn_view a {
+  display: inline-block;
+  width: 100%;
+  line-height: 100%;
+  color: var(--color-secondary);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn_view:hover {
+  background-color: var(--color-secondary);
+}
+.btn_view:hover a {
+  color: white;
+}
+
+/*Footer*/
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #000000;
+}
 
 /*Mobile*/
 @media screen and (max-width: 400px) {
+  /*Main*/
   .section_main {
     flex-direction: column;
     justify-content: center;
@@ -171,5 +283,53 @@ main {
   .section_main h4 {
     font-size: 25px;
     color: var(--color-secondary);
+  }
+
+  /*Skills*/
+
+  .skills_container {
+    gap: 25px;
+  }
+
+  .skill_container i {
+    font-size: 30px;
+  }
+
+  .git {
+    color: white;
+  }
+
+  .html {
+    color: var(--color-html);
+  }
+
+  .css {
+    color: var(--color-css);
+  }
+
+  .javas {
+    color: var(--color-javascript);
+  }
+
+  .react {
+    color: var(--color-react);
+  }
+
+  .node {
+    color: var(--color-node);
+  }
+
+  .express {
+    color: var(--color-express);
+  }
+
+  .mysql {
+    color: var(--color-mysql);
+  }
+
+  /*My Work*/
+  .my_work_item {
+    width: 300px;
+    height: 200px;
   }
 }

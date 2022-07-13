@@ -1,7 +1,7 @@
 "use strict";
 
 let myWorks = [];
-const worksContainer = document.querySelector(".my_work_container");
+const worksContainer = document.querySelector(".works_container");
 
 fetch("../assets/my_work.json")
   .then((data) => data.json())
@@ -32,22 +32,18 @@ const createItemWork = (item) => {
   const gitButton = (url_github) => {
     return url_github.length !== 0 ? gitrepoButton(url_github) : "";
   };
-  if (!item.construction) {
-    contWork.innerHTML = `
-    <div class="work_title_container">
-      <p class="work_title">${item.title}</p>
-      ${viewButton(item.url)}
-      ${gitButton(item.url_github)}
-    </div>
-  `;
-  } else {
-    contWork.innerHTML = `
-      <div class="work_title_container">
-        <p class="work_title">${item.title}</p>
-        <p class="under_construction">Under construction</p>
-      </div>
-    `;
-  }
+
+  contWork.innerHTML = `
+  <div class="work_title_container">
+    <p class="work_title">${item.title}</p>
+    <div class="buttons_container">
+    <button class="btn_view">
+      <a href="${item.url}" target="_blank">View</a>
+    </button>
+    <button class="btn_view">
+      <a href="${item.url_github}" target="_blank">View GitHub</a>
+    </button></div>
+  </div>`;
   return contWork;
 };
 
