@@ -7,6 +7,7 @@
   padding: 10px;
   box-sizing: border-box;
   position: fixed;
+  z-index: 20;
 }
 
 .header_icon {
@@ -52,6 +53,7 @@
   width: auto;
   height: 80vh;
   position: fixed;
+  z-index: 20;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -87,7 +89,7 @@
   margin-top: 10px;
 }
 
-.fa-brands {
+.social-github, .social-linkedin {
   font-size: 25px;
   background: -webkit-linear-gradient(
     45deg,
@@ -99,6 +101,6 @@
   transition: transform 0.7s ease;
 }
 
-.fa-brands:hover {
+.social-github:hover, .social-linkedin:hover {
   transform: rotate(359deg);
 }
