@@ -1,26 +1,34 @@
 [
   {
     "id": 2,
-    "title": "To Do List Backend",
+    "title": "To Do List Backend (Node js, Express, MongoDB)",
     "url": "",
     "url_github": "https://github.com/DarCkly666/Todo_List",
-    "image": "https://photos.bandsintown.com/large/9785854.jpeg",
+    "image": "https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png",
     "construction": false
   },
   {
     "id": 3,
-    "title": "Material Apoyo FCYT",
-    "url": "",
-    "url_github": "",
-    "image": "https://elements-cover-images-0.imgix.net/b0ddb8bb-7e2b-4a75-8128-28f5917ea45e?auto=compress%2Cformat&fit=max&w=900&s=2c2c364ac486a1723a888cb7af3cd011",
-    "construction": true
+    "title": "Poké info (React.JS, Pokeapi)",
+    "url": "https://my-poke-info.herokuapp.com/",
+    "url_github": "https://github.com/DarCkly666/PokeInfo",
+    "image": "./assets/PokeInfo.png",
+    "construction": false
   },
   {
     "id": 4,
-    "title": "Sakura Cards Info",
+    "title": "Sakura Cards Info (HTML, CSS, JavaScript)",
     "url": "https://darckly666.github.io/SakuraCardInfo",
     "url_github": "https://github.com/DarCkly666/DarCkly666.github.io/tree/sakura/SakuraCardInfo",
     "image": "https://www.latercera.com/resizer/WyDSTJbBDSwhlLK4gGqLOMGMBlc=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/A4VGJC4W4VF45CQ375L2OMLYNQ.jpg",
+    "construction": false
+  },
+  {
+    "id": 5,
+    "title": "Twice API Rest (Node js, Express, MongoDB)",
+    "url": "https://twicerestapi.herokuapp.com/",
+    "url_github": "https://github.com/DarCkly666/twice_rest_api",
+    "image": "./assets/Twiceapi.png",
     "construction": false
   }
 ]
