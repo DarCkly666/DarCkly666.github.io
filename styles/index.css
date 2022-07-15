@@ -27,6 +27,6 @@ html {
 
 body {
   position: relative;
-  background-color: var(--color-background);
+  background-color: var(--color-background) !important;
   overflow-x: hidden;
 }
